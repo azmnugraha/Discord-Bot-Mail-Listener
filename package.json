@@ -1,0 +1,29 @@
+{
+  "name": "discord-email-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "node test-connection.js",
+    "test:connection": "node test-connection.js",
+    "test:discord": "node debug-token.js",
+    "test:status": "node check-bot-status.js",
+    "setup": "node setup.js",
+    "setup:env": "node create-env.js",
+    "lint": "node -c index.js && node -c src/emailListener.js && node -c src/itemkuEmailParser.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "discord.js": "^14.23.2",
+    "dotenv": "^17.2.3",
+    "imap": "^0.8.19",
+    "mailparser": "^3.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
