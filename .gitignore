@@ -4,6 +4,11 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Data and backups (contains sensitive information)
+data/
+data/backups/
+data/*.json
+
 # Environment variables
 .env
 .env.local
