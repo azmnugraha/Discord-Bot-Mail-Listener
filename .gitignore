@@ -5,9 +5,9 @@ yarn-debug.log*
 yarn-error.log*
 
 # Data and backups (contains sensitive information)
-data/
-data/backups/
-data/*.json
+data/*
+!data/backups/
+!data/backups/**
 
 # Environment variables
 .env
